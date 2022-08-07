@@ -1,0 +1,2 @@
+### GET Employees
+GET http://localhost:4004/service/remote/Employees
