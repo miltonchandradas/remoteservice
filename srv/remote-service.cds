@@ -1,6 +1,6 @@
 using {demo} from '../db/schema';
 
 @path : 'service/remote'
-service DemoService {
+service RemoteService {
     entity Employees as select from demo.Employees;
 }
