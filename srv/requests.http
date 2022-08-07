@@ -9,6 +9,9 @@ GET http://localhost:4004/service/remote/$metadata
 ### GET Employees
 GET http://localhost:4004/service/remote/Employees
 
+### GET Employees
+GET http://localhost:4004/service/remote/Employees?$expand=orders
+
 
 ### GET service document
 GET http://localhost:4004/northwind/
