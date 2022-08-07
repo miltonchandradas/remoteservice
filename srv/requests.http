@@ -1,2 +1,19 @@
+### GET service document
+GET http://localhost:4004/service/remote/
+
+
+### GET metadata document
+GET http://localhost:4004/service/remote/$metadata
+
+
 ### GET Employees
 GET http://localhost:4004/service/remote/Employees
+
+
+### GET service document
+GET http://localhost:4004/northwind/
+
+
+### GET metadata document
+GET http://localhost:4004/northwind/$metadata
+

@@ -1,0 +1,5 @@
+Copy metadata document of Northwind OData Service to srv folder
+Run the command...
+    cds import srv/northwind.edmx
+
+

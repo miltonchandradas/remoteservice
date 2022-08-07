@@ -39,5 +39,13 @@
       "no-console": "off",
       "require-atomic-updates": "off"
     }
+  },
+  "cds": {
+    "requires": {
+      "northwind": {
+        "kind": "odata-v2",
+        "model": "srv\\external\\northwind"
+      }
+    }
   }
 }
