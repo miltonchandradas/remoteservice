@@ -24,7 +24,7 @@ module.exports = async (srv) => {
                const orders = await northwindService.run(
                   SELECT.from(Orders).where({ EmployeeID: employee.id })
                );
-               employee.orders_id = orders;
+               employee.orders = orders;
             })
          );
       } catch (error) {
