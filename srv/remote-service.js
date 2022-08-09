@@ -6,6 +6,10 @@ module.exports = async (srv) => {
    // connect to remote service
    const northwindService = await cds.connect.to("northwind");
 
+   srv.on("READ", Orders, async (req, next) => {
+      return await northwindService.run(SELECT.from(Orders));
+   });
+
    srv.on("READ", Employees, async (req, next) => {
       if (!req.query.SELECT.columns) return await next();
 

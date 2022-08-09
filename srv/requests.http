@@ -9,6 +9,9 @@ GET http://localhost:4004/service/remote/$metadata
 ### GET Employees
 GET http://localhost:4004/service/remote/Employees
 
+### GET Orders
+GET http://localhost:4004/service/remote/Orders
+
 ### GET Employees
 GET http://localhost:4004/service/remote/Employees?$expand=orders
 
