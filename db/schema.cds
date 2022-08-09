@@ -3,7 +3,7 @@ namespace demo;
 entity Employees {
     key id     : Integer;
         name   : String;
-        orders : Association to many Orders;
+        orders : Association to many Orders on orders.employeeId = $self.id;
 }
 
 using {northwind} from '../srv/external/northwind.csn';
